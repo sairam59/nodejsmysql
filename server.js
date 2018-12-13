@@ -73,7 +73,7 @@ pool.getConnection((err, connection) => {
     }
     // console.log(connection);
     // Create
-    connection.query("INSERT INTO `test`.`employee` (`name`,`salary`) VALUES ('Aaradhya',500000)", (err, results, fields) => {
+    connection.query("INSERT INTO `test`.`employee` (`name`,`salary`) VALUES ('Mohan',800000)", (err, results, fields) => {
         if (err) throw err;
         else {
             console.log("Employee Created");
@@ -93,8 +93,8 @@ pool.getConnection((err, connection) => {
             // console.log(fields);
         }
     });
-    // Update
-    connection.query("UPDATE `test`.`employee` SET `salary` = 321223 WHERE `empid` = 1010 ", (err, results, fields) => {
+    // // Update
+    connection.query("UPDATE `test`.`employee` SET `salary` = 321223 WHERE `empid` = 1027 ", (err, results, fields) => {
         if (err) throw err;
         else {
             console.log("***************Employee Updated successfully***************");
@@ -102,8 +102,8 @@ pool.getConnection((err, connection) => {
             console.log('Changed ' + results.changedRows + ' rows');
         }
     });
-    // Delete
-    connection.query("DELETE FROM `test`.`employee` WHERE `empid` = 1004", (err, results) => {
+    // // Delete
+    connection.query("DELETE FROM `test`.`employee` WHERE `empid` = 1027", (err, results) => {
         if (err) throw err;
         else {
             console.log("***************Employee deleted successfully***************");

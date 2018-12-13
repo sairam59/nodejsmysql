@@ -4,6 +4,7 @@
   "description": "-- mysql pkg installation\r npm install mysql",
   "main": "heelo.js",
   "dependencies": {
+    "express": "^4.16.4",
     "mysql": "github:mysqljs/mysql"
   },
   "devDependencies": {
@@ -11,8 +12,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "bis": "nodemon server.js"
+    "start": "node index.js",
+    "bis": "nodemon server.js",
+    "bis1": "nodemon index.js"
   },
   "repository": {
     "type": "git",
